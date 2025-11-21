@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background:#2b2b2b;
+	font-family: 'Merriweather';
+}
+.logo {
+	background-color: #333;
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+
+#sl {
+	margin-left: 300px;
+	height: 100%;
+}
+#n1 {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom:20px;
+	font-weight: bold;
+	color:white;
+}
+#n {
+	text-align: center;
+	font-size: 12px;
+	margin-top:40px;
+	margin-bottom:20px;
+	color:white;
+}
+#opis {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 60px;
+	color:white;
+}
+.regbox{
+	width: 600px;
+	background-color:white;
+	margin: 0 auto 60px auto;
+	padding: 30px;
+	justify-content: center;
+	align-items: flex-start;
+}
+/* Okvir ob napaki */
+.error-box {
+  border: 2px solid #e74c3c;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 15px; /* manjši spodnji odmik kot prej */
+  transition: margin-bottom 0.3s, border 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+}
+.box1.error-box{
+	min-height: 90px;
+	margin-bottom: 10px;
+}
+.box3.error-box,
+.box2.error-box,
+.box4.error-box{
+	min-height: 80px;
+	margin-bottom: 15px;	
+}
+/* Ob višini boxa z napako zmanjšaj višino, da je bližje originalu */
+.box11.error-box {
+  min-height: 70px; /* manjša višina kot prej, a dovolj za napako */
+  margin-bottom: 15px;
+}
+
+/* Napaka spodaj */
+.error {
+  display: none;
+  color: #c0392b;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #fcebea;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.box1, .box2, .box3, .box4 {
+  min-height: 55px; /* ali tvoja željena */
+  transition: min-height 0.3s, margin-bottom 0.3s;
+}
+
+/* Ko se napaka pokaže */
+.error-box .error {
+  display: block;
+}
+
+.input1 {
+  width: 90%;
+  height: 15px;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+
+.box1{
+	width:98%;
+	height:55px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom:5px;
+}
+.hr{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.lab{
+	margin-bottom:5px;
+}
+
+.box2{
+	width:120px;
+	height:50px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.tablem{
+	width:100%;
+	margin-top:10px;
+	border-collapse: separate;
+	border-spacing: 20px 0;
+	margin-left: -20px;
+}
+
+select{
+	border: none;
+	outline:none;
+	width:95%;
+	margin-bottom:5px;
+	margin-top:5px;
+	font-size:16px;
+}
+
+.box3{
+	width:200px;
+	height:50px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.input2 {
+	width: 90%;
+	height: 10px;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	outline:none;
+}
+
+.lab1{
+	font-size: 12px;
+	margin-bottom:5px;
+}
+.p1{
+	font-size: 11px;
+	margin-bottom:20px;
+}
+.box4{
+	width:276px;
+	height:50px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.input3 {
+	width: 90%;
+	height: 10px;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	outline:none;
+}
+.lab2{
+	display: flex;
+	align-items: flex-start;
+	gap: 5px;
+	font-size: 13px;
+	color: #444;
+}
+.box11{
+	width:98%;
+	height:55px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom:20px;
+	margin-top: 5px;
+}
+.lab3{
+	font-size: 13px;
+	color: #444;
+	margin-top: 20px;
+}
+.btn {
+  display: block;
+  width:40%;
+  background-color: #d71920; /* Emirates red */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 0;
+  margin: 40px auto 0 auto;
+}
+
+.btn:hover {
+  background-color: #b51218;
+  transform: scale(1.02);
+}
+
+.btn:active {
+  background-color: #a10f14;
+  transform: scale(0.98);
+}
+
+.disabled-field {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.below-email.blurred {
+    filter: blur(2px);
+    pointer-events: none;
+    user-select: none;
+    transition: filter 0.3s ease;
+}
+
+.check{
+	accent-color: #d71920;
+}
+

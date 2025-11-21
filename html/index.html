@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/svg+xml" href="../img/ek.svg">
+	<title>Emirates</title>
+	<link rel="stylesheet" href="../css/obrazec1.css">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+<body>
+	<div class="logo">
+		<a href="html/index.html">
+			<img src="../img/logo.png" alt="emirates-logo" id="sl">
+		</a>
+	</div>
+
+	<p id="naslov1">Log in to Emirates</p>
+	<p id="opis">
+		Earn Miles every time you fly with us and our partners. And <br>
+		spend your Skywards Miles on a world of rewards.
+	</p>
+
+	<div class="container">
+		<div class="login levo">
+			<p class="naslov2">Login</p>
+			<div class="box3">
+				<p class="lab1">Email or Skywards number</p>
+				<input type="text" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
+			</div>
+			<a href="#" class="link">Forgot your email or account number?</a>
+			
+			<div class="box3">
+				<p class="lab1">Password</p>
+				<input type="password" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
+			</div>
+			<a href="#" class="link">Forgot/Create password</a>
+			
+			<div class="checkbox">
+				<input type="checkbox" id="remember">
+				<label for="remember">Keep me logged in on this device</label>
+			</div>
+			<br>
+			<input type="submit" value="Log in" class="loginG">
+		</div>
+		<div class="divider"></div>
+		<div class="desno">
+			<p class="naslov2 darker">Not an Emirates Skywards<br/> member yet?</p>
+			<p class="desc">Register now to make the most of every mile with <a href="#" class="link2">Emirates Skywards</a></p>
+			<form action="reg.html" method="get">
+				<input type="submit" value="Join now" class="joinnow">
+			</form>
+
+		</div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>	
+	<script src="../js/required_field.js"></script>
+
+</body>
+</html>
